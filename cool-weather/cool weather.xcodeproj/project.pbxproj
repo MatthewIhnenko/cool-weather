@@ -22,6 +22,8 @@
 		845CFC322875B4660025A09E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 845CFC342875B4660025A09E /* Localizable.strings */; };
 		845CFC372875B8290025A09E /* String+Localazible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845CFC362875B8290025A09E /* String+Localazible.swift */; };
 		8499EB412864D5B20082A972 /* CurrentWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499EB402864D5B20082A972 /* CurrentWeatherResponse.swift */; };
+		84EE864C287F0136000A237C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84EE864B287F0136000A237C /* FirebaseAnalytics */; };
+		84EE864E287F06F6000A237C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EE864D287F06F6000A237C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		845CFC352875B4670025A09E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		845CFC362875B8290025A09E /* String+Localazible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localazible.swift"; sourceTree = "<group>"; };
 		8499EB402864D5B20082A972 /* CurrentWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResponse.swift; sourceTree = "<group>"; };
+		84EE864D287F06F6000A237C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EE864C287F0136000A237C /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 				84035071286489E00025F33C /* Main.storyboard */,
 				84035074286489E30025F33C /* Assets.xcassets */,
 				84035076286489E30025F33C /* LaunchScreen.storyboard */,
+				84EE864D287F06F6000A237C /* GoogleService-Info.plist */,
 				84035079286489E30025F33C /* Info.plist */,
 			);
 			path = "cool weather";
@@ -162,6 +167,9 @@
 			dependencies = (
 			);
 			name = "cool weather";
+			packageProductDependencies = (
+				84EE864B287F0136000A237C /* FirebaseAnalytics */,
+			);
 			productName = "cool weather";
 			productReference = 84035068286489E00025F33C /* cool weather.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +243,9 @@
 				ru,
 			);
 			mainGroup = 8403505F286489E00025F33C;
+			packageReferences = (
+				84EE864A287F0136000A237C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 84035069286489E00025F33C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +264,7 @@
 			files = (
 				84035078286489E30025F33C /* LaunchScreen.storyboard in Resources */,
 				845CFC322875B4660025A09E /* Localizable.strings in Resources */,
+				84EE864E287F06F6000A237C /* GoogleService-Info.plist in Resources */,
 				84035075286489E30025F33C /* Assets.xcassets in Resources */,
 				84035073286489E00025F33C /* Main.storyboard in Resources */,
 			);
@@ -639,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84EE864A287F0136000A237C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84EE864B287F0136000A237C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84EE864A287F0136000A237C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84035060286489E00025F33C /* Project object */;
 }
