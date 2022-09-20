@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  cool weather
+
+  Created by Matthew on 6.07.22.
+  
+*/
+"todayInCityLabelText" = "Сегодня в: ";
+"tempIsLabelText" = "Температура: ";
+"uvIndexIsText" = "УФ индекс: ";
+"sunsetLabelText" = "Закат: ";
+"sunriseLabelText" = "Рассвет: ";
